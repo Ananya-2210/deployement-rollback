@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  IMAGE_NAME: yourdockerhubusername/rollback-app
+  IMAGE_NAME: rureous2210/rollback-app
 
 jobs:
   build:
