@@ -1,12 +1,19 @@
-// index.js
+// // index.js
+// const express = require("express");
+// const app = express();
+// const port = 3000;
+
+// app.get("/", (req, res) => {
+//   res.send("<h1>Hello from version 1.0.0</h1>");
+// });
+
+// app.listen(port, () => {
+//   console.log(`Server running on http://localhost:${port}`);
+// });
 const express = require("express");
 const app = express();
 const port = 3000;
 
-app.get("/", (req, res) => {
-  res.send("<h1>Hello from version 1.0.0</h1>");
-});
+app.get("/", (req, res) => res.send("Hello from version 1.0.0"));
 
-app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
-});
+app.listen(port, () => console.log(`App running on port ${port}`));
